@@ -28,7 +28,7 @@ pipeline {
             steps {
                script {
                    def dockerrm = 'sudo docker rm -f My-first-containe1 || true'
-                    def dockerCmd = 'sudo docker run -itd --name My-first-containe1 -p 8082:80 rakeshkumarnk/3febimg:v1'
+                    def dockerCmd = 'sudo docker run -itd --name My-first-containe1 -p 8083:80 rakeshkumarnk/3febimg:v1'
                     sshagent(['sshkeypair']) {
                         //chnage the private ip in below code
                         // sh "docker run -itd --name My-first-containe1 -p 8083:80 rakeshkumarnk/3febimg:v1"
